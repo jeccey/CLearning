@@ -29,9 +29,9 @@ void list_seq(int start, int m, int n)
 	}
 	int i;
 	for(i = start; i < n; i++){
-		exchange(start, i);			//交换第i个数到最前面（start）来，准备打印
+		exchange(start, i);		//交换第i个数到最前面（start）来，准备打印
 		list_seq(start + 1, m, n);	//对剩下的数做全排列
-		exchange(i, start);			//复位 
+		exchange(i, start);		//复位 
 	}
 }
 
